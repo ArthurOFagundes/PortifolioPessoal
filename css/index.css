@@ -1,0 +1,61 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --white: #fff;
+  --black: #0008;
+  --yellow:#fae12c;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/PortifolioPessoal/src/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--black);
+  background-blend-mode: darken;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+h1{
+  font-size: clamp(2.5rem,8vw,6.5rem);
+  color: var(--white);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+p{
+  font-size: clamp(1.2rem,4vw,3rem);
+  font-style: italic;
+  color: var(--white);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+input{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  width: 200px;
+  height: 40px;
+  background-color: var(--yellow);
+  font-size: 1.2rem;
+  border-radius: 5px;
+  border-style: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
