@@ -32,3 +32,10 @@ function showProjects(data) {
 }
 
 getProjects()
+
+var chk = document.getElementById('check-theme');
+
+chk.addEventListener('change', () => {
+  document.body.classList.toggle('dark')
+
+})

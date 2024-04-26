@@ -16,6 +16,60 @@
   --yellow:#fae12c;
 }
 
+
+
+.checkbox-theme{
+  opacity: 0;
+}
+
+.label-theme{
+  cursor: pointer;
+
+  align-items: center;
+  justify-content: center;
+
+
+  position: absolute;
+  height: 26px;
+  width: 50px;
+
+
+  transform: scale(1.5);
+
+}
+
+.sun-theme{
+  color: var(--white);
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.moon-theme{
+  position: absolute;
+  color: var(--white);
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.checkbox-theme:checked + .label-theme .moon-theme{
+  opacity: 1;
+}
+.checkbox-theme:checked + .label-theme .sun-theme{
+  opacity: 0;
+}
+
+.checkbox-theme + .label-theme .sun-theme{
+  opacity: 1;
+}
+.checkbox-theme + .label-theme .moon-theme{
+  opacity: 0;
+}
+
+
 ::-webkit-scrollbar{
   width: 10px;
 }
@@ -75,6 +129,7 @@ nav{
 .box-btn-actions{
   display: flex;
   gap: 1rem;
+  color: var(--white);
 }
 
 :is(button, .link-action){
@@ -99,6 +154,8 @@ nav{
   text-decoration: none;
   width: 12.5rem;
   text-align: center;
+  color: var(--white);
+
 }
 
 main{
@@ -143,13 +200,17 @@ strong{
 .box-img-main{
   max-width: 28.125rem;
   padding: 1rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .img-profile{
-  background-color: #fae12c;
+  padding: 0;
+  margin: 0;
+  background-color: var(--yellow);
   border-radius: 50%;
   width: 100%;
-  border: 2px solid var(--white);
+  border: 10px solid var(--white);
 }
 
 :is(.second-section, .fourth-section){
@@ -215,6 +276,8 @@ strong{
 footer{
   padding: 4rem;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: 2rem;
 }
@@ -250,4 +313,13 @@ footer > div{
 
 :is(.img-profile, .img-who-am-i){
   box-shadow: 1px 1px 1px 1px var(--yellow);
+}
+
+
+.dark{
+  --white: #eeee;
+  --dark1: #393E46;
+  --dark2: #2d3036;
+  --dark6: #222831;
+  --yellow:#FFD369;
 }
